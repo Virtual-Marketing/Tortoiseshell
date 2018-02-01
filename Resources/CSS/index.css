@@ -1,0 +1,314 @@
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: white;
+  line-height: 1.4rem;
+  margin: 0
+  }
+
+/*style for the header with nav section*/
+.header_main {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31rem;
+  width: 100%;
+}
+
+.container_site {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*style for header section*/
+br {
+  display: block;
+  margin: 0;
+  font-size: 0px;
+  line-height: 1rem;
+}
+
+.container_company {
+  display: flex;
+  background-color: cadetblue;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  }
+
+.container_company img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.container_company span {
+  font-size: 1rem
+}
+/*style for nav area in header section*/
+.container_navigation {
+  padding-left: 35%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container_navigation li {
+  padding: 0rem 1rem;
+}
+
+
+/*style for main banner section*/
+
+.container_site2 {
+  max-width: 980px;
+}
+.main_banner {
+  margin-left: 45%;
+  margin-right: 16%;
+  margin-top: 10rem;
+}
+
+.headline {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 2.5rem 5rem;
+}
+
+.headline h3 {
+  font-size: 2rem;
+  line-height: 1.2rem;
+}
+
+/*style for the benefits section*/
+.benefit {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  }
+
+.benefit_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  }
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fittings img {
+  width: 5rem;
+}
+
+.delivery img {
+  width: 5rem;
+}
+
+.description  {
+  color: black;
+  text-align: center;
+}
+
+/*style for the other company info section*/
+.company_info {
+  display: flex;
+  justify-content: center;
+    }
+
+.info {
+  max-width: 35%;
+}
+.type {
+  display: block;
+  background-color: cadetblue;
+  width: 10rem;
+  color: white;
+  font-weight: bold;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1.25rem;
+}
+
+.info p {
+  font-size: 1rem;
+  display: block;
+  color: black;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  padding-right: 5%;
+}
+/*style for the footer section*/
+.end {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: azure;
+  color: black;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.end img {
+  height: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+}
+.mobile_nav {
+  display: none;
+}
+
+/* for tablet screens max-width of 1024px*/
+@media only screen and (max-width: 1024px) {
+  .container_site {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .container_navigation {
+    padding-left: 40%;
+  }
+  br {
+    display: none;
+  }
+  .header_main {
+    height: 22rem;
+  }
+  .container_company {
+    width: 100%;
+  }
+  .container_site2 {
+    max-width: 1024px;
+  }
+  .main_banner {
+    margin-left: 43%;
+    margin-right: 15%;
+    margin-top: 5rem;
+  }
+  .headline {
+    padding: 1.75rem 4rem;
+  }
+  .headline h3 {
+    font-size: 1.33rem;
+  }
+  }
+
+/* for phone screens max-width of 470px */
+/* HAVE NOT BEEN ABLE TO FIGURE OUT HOW TO SWAP IN "MENU" IN NAV BAR*/
+
+@media only screen and (max-width: 470px) {
+  .container_site {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  .container_site2 {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  .header_main {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .container_company {
+    justify-content: flex-start;
+  }
+  .container_company span {
+    display: none;
+  }
+
+  .container_navigation {
+    display: none;
+  }
+
+  .header_main {
+    height: 17rem;
+  }
+
+  .main_banner {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 9rem;
+  }
+/*revised headline section*/
+  .headline {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-content: center;
+  }
+
+  .headline h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  /*revised benefits section*/
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.77rem;
+    margin-bottom: 1.77rem;
+    }
+
+  .benefit_image {
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    }
+  .description {
+    font-size: .77rem;
+    }
+/*revised company info section*/
+    .company_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        }
+
+    .info {
+      max-width: none;
+      width: 100%;
+    }
+
+    .info p {
+      font-size: .77rem;
+      display: block;
+      margin-left: 1rem;
+    }
+    .type {
+      display: block;
+      text-align: center;
+      background-color: cadetblue;
+      width: 100%;
+      padding-left: 0;
+    }
+/*revised footer section*/
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.end img {
+  height: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+.end span {
+  display: none;
+}
+}
